@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,30 @@
     <script src="scripts/client.js"></script>
     <script src="scripts/controllers/home.controller.js"></script>
     <script src="scripts/controllers/hershey.controller.js"></script>
+    <base href="/">
 
-    <title>Document</title>
+    <title>Cool People</title>
 </head>
-<body>
-    
+
+<body ng-app="myApp">
+    <header>
+        <h1>People that inspire me: </h1>
+        <nav>
+            <ul>
+                <button> <li><a href="/">Home</a></li></button>
+                <button> <li><a href="/hershey">Milton Hershey</a></li></button>
+                <button> <li><a href="/grace">Grace Hopper</a></li></button>
+                <button> <li><a href="/snatch">Snatch</a></li></button>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <ng-view></ng-view>
+    </section>
+
+
+    <footer>
+    </footer>
 </body>
+
 </html>
