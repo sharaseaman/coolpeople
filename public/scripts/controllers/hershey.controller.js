@@ -6,4 +6,9 @@ console.log('in Hershey controller');
    vm.skill = SlapService.skill;
 
 
+   vm.slapThem = function(){
+    console.log('slapThem');
+    SlapService.slapCount();
+   }
+
  });
